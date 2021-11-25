@@ -1,0 +1,37 @@
+.navbar .navbar-brand svg {
+    fill: #0064E6;
+}
+.navbar.navbar-transparent .navbar-brand svg {
+    fill: white;
+}
+
+.section-da .card.card:not(.card-plain) .card-image .img {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #101010;
+}
+
+.section-da .card.card-blog {
+    margin-top: 0;
+}
+
+.section-da.container.row {
+    margin-top: 10px;
+}
+
+.section-mi .icon img {
+    width: 68px;
+}
+
+.section-3d {
+    padding: 0;
+    background-color: #0A0A0A;
+}
+
+.section-3d .col-md-6 {
+    padding: 0;
+}
+
+video {
+    width: 100%;
+}
