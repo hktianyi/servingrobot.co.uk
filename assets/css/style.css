@@ -19,6 +19,10 @@
     margin-top: 10px;
 }
 
+.section-mi {
+    padding-top: 0;
+}
+
 .section-mi .icon img {
     width: 68px;
 }
@@ -32,6 +36,123 @@
     padding: 0;
 }
 
+.section-3d .robot-indicator {
+    color: #0072FF;
+    font-size: 36px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
 video {
     width: 100%;
 }
+
+.section-scheduler {
+    padding: 0;
+}
+
+.section-scheduler img {
+    max-width: 80%;
+}
+
+.section-contactus {
+    padding-bottom: 80px;
+    position: relative
+}
+
+.section-contactus .card {
+    top: 60px
+}
+
+.section-contactus .big-map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #eee;
+}
+
+.section-contactus .card-contact .card-body .checkbox {
+    margin-top: 5px
+}
+
+.card-contact .card-header {
+    margin: 15px;
+    border-radius: 3px;
+    padding: 15px 0 0;
+    background-color: #fff;
+    border: 0
+}
+
+.card-contact .card-header .card-title {
+    color: #66615b;
+    margin-top: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd
+}
+
+.card-contact .card-body .card-icon {
+    float: left;
+    margin-top: 24px;
+    margin-right: 10px;
+    border: 0
+}
+
+.card-contact .card-body .card-icon i {
+    font-size: 30px;
+    padding: 25px;
+    width: 50px;
+    border: 0;
+    border-radius: 50%;
+    height: 110px
+}
+
+.info {
+    padding: 30px 0;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto
+}
+
+.info .icon {
+    margin-top: 0;
+    font-size: 3.4em
+}
+
+.info .icon.icon-sm {
+    font-size: 1.6em
+}
+
+.info .icon .fa {
+    width: 48px
+}
+
+.info .h4, .info h4 {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.info-horizontal {
+    text-align: left;
+    margin-top: 0
+}
+
+.info-horizontal .icon {
+    float: left;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 2.5em
+}
+
+.info-horizontal .icon .fa {
+    width: 48px
+}
+
+.info-horizontal .description {
+    overflow: hidden
+}
+
+.info-horizontal .btn {
+    margin-left: -19px
+}
+
+.footer-black,.footer-transparent,.subscribe-line-transparent{background-color:#252422;color:#ddd}
