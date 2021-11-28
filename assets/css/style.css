@@ -1,6 +1,7 @@
 .navbar .navbar-brand svg {
     fill: #0064E6;
 }
+
 .navbar.navbar-transparent .navbar-brand svg {
     fill: white;
 }
@@ -155,4 +156,15 @@ video {
     margin-left: -19px
 }
 
-.footer-black,.footer-transparent,.subscribe-line-transparent{background-color:#252422;color:#ddd}
+.footer-black, .footer-transparent, .subscribe-line-transparent {
+    background-color: #252422;
+    color: #ddd
+}
+
+.section-detail td {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0
+}
