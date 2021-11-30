@@ -129,14 +129,13 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Get in touch with us</h2>
-                    <p>Some text......</p>
                 </div>
             </div>
-            <div class="row pt-4">
+            <div class="row pt-5">
                 <div class="col-md-12">
                     <div class="card card-contact no-transition">
-                        <h3 class="card-title text-center">drop us a note</h3>
-                        <div class="row">
+                        <!--                        <h3 class="card-title text-center">drop us a note</h3>-->
+                        <div class="row pt-3">
                             <div class="col-md-5">
                                 <div class="card-body">
                                     <div class="info info-horizontal">
@@ -159,6 +158,8 @@
                                             <h4 class="info-title">Give us a ring</h4>
                                             <p>7716474334</p>
                                             <p>0161 834 5539</p>
+                                            <p><a href="mailto:sales@servingrobot.co.uk" style="color: #9a9a9a">sales@servingrobot.co.uk</a>
+                                            </p>
                                             <p>Mon - Fri, 8:00-22:00</p>
                                         </div>
                                     </div>
@@ -194,7 +195,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 offset-md-6">
-                                                <button type="button" class="btn btn-primary pull-right"
+                                                <button type="button" class="btn btn-info pull-right"
                                                         onclick="sendMsg()">Send Message
                                                 </button>
                                             </div>
@@ -202,6 +203,38 @@
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-5">
+                    <div class="card" data-background="color" data-color="orange">
+                        <div class="card-body">
+                            <h5>The value of Bella is</h5>
+                            <div class="clearfix"></div>
+                            <ul class="services-info">
+                                <li>Optimizing Management for Reduced Labor Costs</li>
+                                <li>Enhancing Core Competitiveness with Differentiated Marketing</li>
+                                <li>Empowering Safe, Efficient, and Intelligent Customer Experience</li>
+                                <li>Allowing Waiters to Focus on Serving Customers Better</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card" data-background="color" data-color="green">
+                        <div class="card-body">
+                            <h5>Quality Services That You Can Rely On</h5>
+                            <div class="clearfix"></div>
+                            <ul class="services-info">
+                                <li>Hundreds of after-sales service centers across the globe</li>
+                                <li>2 -years free warranty</li>
+                                <li>Free custom deployment</li>
+                                <li>Free operation training</li>
+                                <li>Fast service within 24 hours</li>
+                                <li>IoT service: Over 90% of technical issues can be solved remotely</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -278,15 +311,15 @@
             return
         }
         $.ajax({
-            url: 'https://api.servingrobot.co.uk/sendmsg',
+            url: 'http://api.servingrobot.co.uk:10000/sendmsg',
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            data: {
+            data: JSON.stringify({
                 firstname: firstname,
                 lastname: lastname,
                 email: email,
                 message: message,
-            },
+            }),
             success: res => {
                 alert('Send successfully!')
             },
