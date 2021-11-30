@@ -129,6 +129,12 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Get in touch with us</h2>
+                    <p>
+                        3-day free trial<br/>
+                        Free delivery and installation throughout the UK<br/>
+                        Solve the problem of difficult recruitment and expensive labor<br/>
+                        Flexible payments ( a lump sum or installment )
+                    </p>
                 </div>
             </div>
             <div class="row pt-5">
@@ -311,7 +317,7 @@
             return
         }
         $.ajax({
-            url: 'http://39.101.150.197:10005/sendmsg',
+            url: 'http://api.servingrobot.co.uk:10000/sendmsg',
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             xhrFields: {
