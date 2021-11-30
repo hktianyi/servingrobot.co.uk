@@ -314,6 +314,10 @@
             url: 'http://api.servingrobot.co.uk:10000/sendmsg',
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true,
             data: JSON.stringify({
                 firstname: firstname,
                 lastname: lastname,
