@@ -91,9 +91,9 @@
                 <li class="nav-item">
                     <a href="/kettybot.html" class="nav-link">KettyBot</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
-                       href="https://twitter.com/" target="_blank">
+                       href="https://twitter.com/servingrobot" target="_blank">
                         <i class="fa fa-twitter"></i>
                         <p class="d-lg-none">Twitter</p>
                     </a>
@@ -111,7 +111,10 @@
                         <i class="fa fa-instagram"></i>
                         <p class="d-lg-none">Instagram</p>
                     </a>
-                </li>-->
+                </li>
+                <li class="nav-item">
+                    <a href="tel:07716474334" class="nav-link"><i class="fa fa-phone" aria-hidden="true" style="top: 2px"></i>7716474334</a>
+                </li>
                 <li class="nav-item">
                     <a class="btn btn-round btn-info" href="/contactus.html">Contact US</a>
                 </li>
@@ -141,7 +144,7 @@
                                         </div>
                                         <div class="description">
                                             <h4 class="info-title">Find us at the office</h4>
-                                            <p> London </p>
+                                            <p> 175 Cheetham Hill Rd, Cheetham Hill, Manchester M8 8LG </p>
                                         </div>
                                     </div>
                                     <div class="info info-horizontal">
@@ -150,8 +153,9 @@
                                         </div>
                                         <div class="description">
                                             <h4 class="info-title">Give us a ring</h4>
-                                            <p> Guo Jin<br>
-                                                +0161 834 5539<br>
+                                            <p>
+                                                7716474334<br>
+                                                0161 834 5539<br>
                                                 Mon - Fri, 8:00-22:00
                                             </p>
                                         </div>
@@ -225,12 +229,12 @@
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 <script type='text/javascript'>
     function GetMap() {
-        const center = new Microsoft.Maps.Location(51.50632, -0.11014)
+        const center = new Microsoft.Maps.Location(53.497521, -2.237901)
         const map = new Microsoft.Maps.Map('#contactUsMap', {
             credentials: 'AkKb7UbGPVYqiGxiI0WbJZ3Y-J5rxzFsCOHqOGCs5nVU18WQ38X1X-iUIbW05kA2',
             backgroundColor: '#fff',
             center: center,
-            mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+            // mapTypeId: Microsoft.Maps.MapTypeId.aerial,
             disableScrollWheelZoom: true,
             enableClickableLogo: false,
             liteMode: true,
@@ -238,12 +242,12 @@
             showMapTypeSelector: false,
             showScalebar: false,
             showTermsLink: false,
-            showZoomButtons: false,
-            zoom: 14,
+            // showZoomButtons: false,
+            zoom: 13,
         });
         const pin = new Microsoft.Maps.Pushpin(center, {
-            title: 'PUDU',
-            subTitle: 'Our Office',
+            title: 'Office',
+            subTitle: '175 Cheetham Hill Rd',
             text: ''
         });
         map.entities.push(pin);
