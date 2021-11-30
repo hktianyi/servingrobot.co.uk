@@ -167,3 +167,12 @@ video {
     color: #333;
     padding: 10px 0
 }
+
+.services-info {
+    padding-left: 20px;
+}
+
+.services-info li {
+    list-style-type: 'Ø';
+    padding-left: 10px;
+}
