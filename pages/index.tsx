@@ -1,25 +1,13 @@
 import type {NextPage} from 'next'
-import Image from 'next/image'
-import styles from '../styles/Bella.module.css'
-import bannerBellaBot from '../public/img/bella/banner_bellabot.png'
-import design1 from '../public/img/bella/design1.png'
-import design2 from '../public/img/bella/design2.png'
-import design3 from '../public/img/bella/design3.png'
-import design4 from '../public/img/bella/design4.png'
-import light from '../public/img/icons/light.svg'
-import touch from '../public/img/icons/touch.svg'
-import draw from '../public/img/icons/draw.svg'
-import scheduler from '../public/img/scheduler.png'
-import parameter from '../public/img/bella/parameter2.2.0.png'
 
 const Bella: NextPage = () => {
     return (
         <>
-            <div className={"page-header " + styles.bg} data-parallax="true">
+            <div className="page-header" data-parallax="true" style={{backgroundImage: "url('/static/img/bella/banner3.jpg')"}}>
                 <div className="filter"/>
                 <div className="container">
                     <div className="motto text-center">
-                        <Image src={bannerBellaBot} width={380} height={83}/>
+                        <img src='/static/img/bella/banner_bellabot.png' width={380} height={83}/>
                         <h3>Premium Delivery Robot</h3>
                         <p>The latest delivery robot designed by Pudu, BellaBot inherits the outstanding characteristics
                             of the previous generation, while being endowed with superior human-Robot interaction
@@ -44,7 +32,7 @@ const Bella: NextPage = () => {
                             <div className="col-md-4">
                                 <div className="card">
                                     <div className="card-image">
-                                        <Image className="img" src={design1} layout="responsive"/>
+                                        <img className="img" src='/static/img/bella/design1.png'/>
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +41,7 @@ const Bella: NextPage = () => {
                                     <div className="col-md-12">
                                         <div className="card card-blog">
                                             <div className="card-image">
-                                                <Image className="img" src={design2} layout="responsive"/>
+                                                <img className="img" src='/static/img/bella/design2.png'/>
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +50,7 @@ const Bella: NextPage = () => {
                                     <div className="col-md-12">
                                         <div className="card card-blog">
                                             <div className="card-image">
-                                                <Image className="img" src={design3} layout="responsive"/>
+                                                <img className="img" src='/static/img/bella/design3.png'/>
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +59,7 @@ const Bella: NextPage = () => {
                             <div className="col-md-4">
                                 <div className="card card-blog">
                                     <div className="card-image">
-                                        <Image className="img" src={design4} layout="responsive"/>
+                                        <img className="img" src='/static/img/bella/design4.png'/>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +79,7 @@ const Bella: NextPage = () => {
                             <div className="col-md-4">
                                 <div className="info">
                                     <div className="icon">
-                                        <Image src={light}/>
+                                        <img src='/static/img/icons/light.svg'/>
                                     </div>
                                     <div className="description">
                                         <h4 className="info-title">Light Interaction</h4>
@@ -103,7 +91,7 @@ const Bella: NextPage = () => {
                             <div className="col-md-4">
                                 <div className="info">
                                     <div className="icon">
-                                        <Image src={touch}/>
+                                        <img src='/static/img/icons/touch.svg'/>
                                     </div>
                                     <div className="description">
                                         <h4 className="info-title">Touch for Feedback</h4>
@@ -115,7 +103,7 @@ const Bella: NextPage = () => {
                             <div className="col-md-4">
                                 <div className="info">
                                     <div className="icon">
-                                        <Image src={draw}/>
+                                        <img src='/static/img/icons/draw.svg'/>
                                     </div>
                                     <div className="description">
                                         <h4 className="info-title">Smart Expressions</h4>
@@ -233,7 +221,7 @@ const Bella: NextPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                                <div className={"card " + styles.tray} data-background="image">
+                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/evolve_tray.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Infrared Induction Tray</h3>
                                         <p className="card-description">Modular structure for quick disassembly and
@@ -243,7 +231,7 @@ const Bella: NextPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className={"card " + styles.battery} data-background="image">
+                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/evolve_battery.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Power Exchange Technology</h3>
                                         <p className="card-description">Charging and usage scenarios are categorized for
@@ -255,7 +243,7 @@ const Bella: NextPage = () => {
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                                <div className={"card " + styles.rgbd} data-background="image">
+                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/rgbd.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">RGBD</h3>
                                         <p className="card-description">Auto-level adaptive variable suspension. Damping
@@ -267,7 +255,7 @@ const Bella: NextPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className={"card " + styles.suspension} data-background="image">
+                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/suspension.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Auto-Level Independent Linkage Suspension for
                                             Stable</h3>
@@ -281,7 +269,7 @@ const Bella: NextPage = () => {
                     </div>
                 </div>
                 <div className="section section-scheduler section-dark text-right">
-                    <Image src={scheduler}/>
+                    <img src='/static/img/scheduler.png'/>
                     <div className="title" style={{position: "absolute", top: "20%", width: "100%"}}>
                         <div className="container text-left">
                             <div className="row">
@@ -309,8 +297,8 @@ const Bella: NextPage = () => {
                             <div className="col-md-4 offset-md-1">
                                 <div className="card card-plain text-center">
                                     <div className="card-image">
-                                        <Image src={parameter} alt="Parameter"
-                                               className="img-rounded img-responsive"/>
+                                        <img src='/static/img/bella/parameter2.2.0.png' alt="Parameter"
+                                             className="img-rounded img-responsive"/>
                                     </div>
                                 </div>
                             </div>

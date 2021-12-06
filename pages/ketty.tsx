@@ -1,29 +1,12 @@
 import type {NextPage} from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Ketty.module.css'
-import logo from '../public/img/ketty/logo.svg'
-import best1 from '../public/img/ketty/best1.svg'
-import best2 from '../public/img/ketty/best2.svg'
-import best3 from '../public/img/ketty/best3.svg'
-import best4 from '../public/img/ketty/best4.svg'
-import best5 from '../public/img/ketty/best5.svg'
-import best6 from '../public/img/ketty/best6.svg'
-import best7 from '../public/img/ketty/best7.svg'
-import best8 from '../public/img/ketty/best8.svg'
-import parameter from '../public/img/ketty/letter1.png'
 import Modal from 'react-bootstrap/Modal'
 import ReactPlayer from 'react-player'
 import {useState} from "react";
 
 const Ketty: NextPage = () => {
     const [show, setShow] = useState(false);
-    const showVideo = () => {
-
-    }
-    const hideVideo = () => {
-        setShow(false)
-    }
     return (
         <>
             <div className="page-header header-video">
@@ -39,7 +22,7 @@ const Ketty: NextPage = () => {
                 <div className={styles.contentcenter}>
                     <div className="container upper-container text-center">
                         <div className="video-text">
-                            <Image src={logo}/>
+                            <img src='/static/img/ketty/logo.svg'/>
                             <h3 className="title-no-upper-margin">Delivery &amp; Reception Robot with an Ad Display</h3>
                         </div>
                         <br/>
@@ -66,37 +49,37 @@ const Ketty: NextPage = () => {
                                 </div>
                                 <div className="row mt-5">
                                     <div className="col-md-3">
-                                        <Image src={best1}/>
+                                        <img src='/static/img/ketty/best1.svg'/>
                                         <p>Superior Mobility</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best2}/>
+                                        <img src='/static/img/ketty/best2.svg'/>
                                         <p>Customized Advertisement</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best3}/>
+                                        <img src='/static/img/ketty/best3.svg'/>
                                         <p>Customer Attraction</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best4}/>
+                                        <img src='/static/img/ketty/best4.svg'/>
                                         <p>Greeting & Escorting</p>
                                     </div>
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-md-3">
-                                        <Image src={best5}/>
+                                        <img src='/static/img/ketty/best5.svg'/>
                                         <p>AI Voice Interaction</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best6}/>
+                                        <img src='/static/img/ketty/best6.svg'/>
                                         <p>Multiple Delivery Modes</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best7}/>
+                                        <img src='/static/img/ketty/best7.svg'/>
                                         <p>Automatic Recharging</p>
                                     </div>
                                     <div className="col-md-3">
-                                        <Image src={best8}/>
+                                        <img src='/static/img/ketty/best8.svg'/>
                                         <p>Automatic Localization and Navigation System</p>
                                     </div>
                                 </div>
@@ -251,8 +234,8 @@ const Ketty: NextPage = () => {
                             <div className="col-md-4 offset-md-1">
                                 <div className="card card-plain text-center m-auto" style={{width: "50%"}}>
                                     <div className="card-image">
-                                        <Image src={parameter} alt="Parameter"
-                                               className="img-rounded img-responsive"/>
+                                        <img src='/static/img/ketty/letter1.png' alt="Parameter"
+                                             className="img-rounded img-responsive"/>
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +294,7 @@ const Ketty: NextPage = () => {
             <Modal show={show} onHide={() => setShow(false)} size="lg"
                    aria-labelledby="example-modal-sizes-title-lg">
                 <ReactPlayer playing={show} width={"800px"} height={"450px"} controls={true} loop={true}
-                    url='https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/video/kettybot/kettybot_en.mp4'/>
+                             url='https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/video/kettybot/kettybot_en.mp4'/>
             </Modal>
         </>
     )
