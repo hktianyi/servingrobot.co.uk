@@ -1,0 +1,19 @@
+.bg {
+    background-image: url("../public/img/bella/banner3.jpg");
+}
+
+.tray {
+    background-image: url("../public/img/bella/evolve_tray.png");
+}
+
+.battery {
+    background-image: url("../public/img/bella/evolve_battery.png");
+}
+
+.rgbd {
+    background-image: url("../public/img/bella/rgbd.png");
+}
+
+.suspension {
+    background-image: url("../public/img/bella/suspension.png");
+}
