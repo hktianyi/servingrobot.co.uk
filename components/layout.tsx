@@ -8,13 +8,13 @@ import {Navbar, Nav} from 'react-bootstrap'
 const Layout: NextPage = ({children}) => {
     const year = new Date().getFullYear()
     const router = useRouter()
-    let defaultTransparent = router.route !== '/contactus'
+    let defaultTransparent = router.route !== '/contactus' && router.route !== '/admin/msg'
     const [isTransparent, setIsTransparent] = useState(defaultTransparent);
     const [navOpen, setNavOpen] = useState(false);
     useEffect(() => {
         const handleRouteChange = (url: string) => {
             // eslint-disable-next-line react-hooks/exhaustive-deps
-            defaultTransparent = url !== '/contactus'
+            defaultTransparent = url !== '/contactus' && url !== '/admin/msg'
             setIsTransparent(defaultTransparent)
         }
         router.events.on('routeChangeComplete', handleRouteChange)

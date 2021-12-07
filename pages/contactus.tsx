@@ -30,10 +30,6 @@ const Contactus: NextPage = () => {
             });
             map.entities.push(pin);
         }
-        if (Microsoft) {
-            // @ts-ignore
-            window.GetMap()
-        }
         // @ts-ignore
         return () => window.GetMap = undefined
     }, [])

@@ -6,12 +6,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && touch out/.nojekyll && echo \"servingrobot.co.uk\" > out/CNAME && git add out/ && git commit -m \"Deploy gh-pages\" && git push origin `git subtree split --prefix out master`:pages --force"
+    "deploy": "next build && next export && touch out/.nojekyll && echo \"servingrobot.co.uk\" > out/CNAME && git add out/ && git commit -m \"Deploy gh-pages\" && git push origin `git subtree split --prefix out master`:pages --force",
+    "push": "git push origin `git subtree split --prefix out master`:pages --force"
   },
   "dependencies": {
     "axios": "0.24.0",
     "bingmaps": "2.0.3",
     "bootstrap": "^4.6.1",
+    "dayjs": "^1.10.7",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-bootstrap": "1.6.4",
