@@ -135,8 +135,7 @@ const Layout: NextPage = ({children}) => {
                     </div>
                 </footer>
             </main>
-            <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async
-                    defer></script>
+            <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async/>
         </div>
     )
 }

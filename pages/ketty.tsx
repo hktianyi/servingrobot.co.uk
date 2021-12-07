@@ -10,8 +10,8 @@ const Ketty: NextPage = () => {
     return (
         <>
             <div className="page-header header-video">
-                <div className="filter filter-danger"></div>
-                <div className="video-image"></div>
+                <div className="filter filter-danger"/>
+                <div className="video-image"/>
                 <video className={styles.bgvideo} preload="auto" loop={true} muted={true} autoPlay={true}
                        poster="https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/images/pc/kettybot/pc_navigation_en.png">
                     <source
@@ -22,18 +22,24 @@ const Ketty: NextPage = () => {
                 <div className={styles.contentcenter}>
                     <div className="container upper-container text-center">
                         <div className="video-text">
-                            <img src='/static/img/ketty/logo.svg'/>
+                            <img src='/static/img/ketty/logo.svg' style={{maxWidth: "100%"}}/>
                             <h3 className="title-no-upper-margin">Delivery &amp; Reception Robot with an Ad Display</h3>
                         </div>
                         <br/>
-                        <button type="button" onClick={() => setShow(true)}
-                                className="btn btn-lg btn-warning btn-yellow btn-round mr-5">
-                            <i className="fa fa-play"></i> Watch Video
-                        </button>
-                        <Link href="https://exhibitionhall.pudurobotics.com/?lang=en">
-                            <a className="btn btn-lg btn-warning btn-yellow btn-round ml-5" target="_blank">3D
-                                Preview</a>
-                        </Link>
+                        <div className="row">
+                            <div className="col-md-4 offset-md-2 text-md-right">
+                                <button type="button" onClick={() => setShow(true)}
+                                        className="btn btn-lg btn-warning btn-yellow btn-round mt-5">
+                                    <i className="fa fa-play"/> Watch Video
+                                </button>
+                            </div>
+                            <div className="col-md-4 text-md-left">
+                                <Link href="https://exhibitionhall.pudurobotics.com/?lang=en">
+                                    <a className="btn btn-lg btn-warning btn-yellow btn-round mt-5" target="_blank">3D
+                                        Preview</a>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,44 +54,44 @@ const Ketty: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className="row mt-5">
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best1.svg'/>
                                         <p>Superior Mobility</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best2.svg'/>
                                         <p>Customized Advertisement</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best3.svg'/>
                                         <p>Customer Attraction</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best4.svg'/>
                                         <p>Greeting & Escorting</p>
                                     </div>
                                 </div>
                                 <div className="row mt-3">
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best5.svg'/>
                                         <p>AI Voice Interaction</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best6.svg'/>
                                         <p>Multiple Delivery Modes</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best7.svg'/>
                                         <p>Automatic Recharging</p>
                                     </div>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-sm-6">
                                         <img src='/static/img/ketty/best8.svg'/>
                                         <p>Automatic Localization and Navigation System</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4">
-                                <div className="text-right">
+                                <div className="text-md-right">
                                     <img
                                         src="https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/images/pc/kettybot/headerRight.png"
                                         width="50%"/>
