@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 
 const Banner = () => {
     const [show, setShow] = useState(false);
+    const CDN = 'https://cdn.jsdelivr.net/gh/hktianyi/servingrobot.co.uk@pages';
     const christmasMonth = dayjs().month() == 11;
     if (christmasMonth) {
         return (
@@ -15,9 +16,9 @@ const Banner = () => {
                     <div className="filter filter-danger"/>
                     <div className="video-image"/>
                     <video className={styles.bgvideo} preload="auto" loop={true} muted={true} autoPlay={true}
-                           poster="/static/christmas/Xmas-SNS-Poster.jpg">
+                           poster={`${CDN}/static/christmas/Xmas-SNS-Poster.jpg`}>
                         <source
-                            src="/static/christmas/christmas-bg.mp4"
+                            src={`${CDN}/static/christmas/christmas-bg.mp4`}
                             type="video/mp4"/>
                         Video not supported
                     </video>
