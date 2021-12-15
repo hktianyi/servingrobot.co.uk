@@ -123,13 +123,13 @@ const Layout: NextPage = ({children}) => {
                                 <ul>
                                     <li>
                                         <Link href={"/"}>
-                                            <a>PUDU</a>
+                                            <a>PD TECH LIMITED</a>
                                         </Link>
                                     </li>
                                 </ul>
                             </nav>
                             <div className="credits ml-auto">
-                                <span className="copyright">©{year}, Power by PUDU</span>
+                                <span className="copyright">©{year}</span>
                             </div>
                         </div>
                     </div>

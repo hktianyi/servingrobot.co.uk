@@ -1,0 +1,28 @@
+.bgvideo {
+    width: auto;
+}
+
+.bgvideo[poster] {
+    height: 100%;
+    width: 100%;
+}
+
+.header-video.state-play .btn, .header-video.state-play .filter:after, .header-video.state-play .video-text {
+    opacity: 0
+}
+
+.header-video.state-play:hover .btn {
+    opacity: 1
+}
+
+.contentcenter {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%
+}
+

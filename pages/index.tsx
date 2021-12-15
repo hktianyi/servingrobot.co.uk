@@ -1,26 +1,104 @@
 import type {NextPage} from 'next'
+import styles from "../styles/Bella.module.css";
+import {useState} from "react";
+import Modal from "react-bootstrap/Modal";
+import ReactPlayer from "react-player";
+import dayjs from "dayjs";
+
+const Banner = () => {
+    const [show, setShow] = useState(false);
+    const christmasMonth = dayjs().month() == 11;
+    if (christmasMonth) {
+        return (
+            <>
+                <div className="page-header header-video">
+                    <div className="filter filter-danger"/>
+                    <div className="video-image"/>
+                    <video className={styles.bgvideo} preload="auto" loop={true} muted={true} autoPlay={true}
+                           poster="/static/christmas/Xmas-SNS-Poster.jpg">
+                        <source
+                            src="/static/christmas/christmas-bg.mp4"
+                            type="video/mp4"/>
+                        Video not supported
+                    </video>
+                    <div className={styles.contentcenter}>
+                        <div className="container upper-container text-center">
+                            <div className="video-text">
+                                <img src='/static/img/bella/banner_bellabot.png' width={380} height={83}/>
+                                <h3 className="title-no-upper-margin">Premium Delivery Robot</h3>
+                                <p>The latest delivery robot designed by Pudu, BellaBot inherits the outstanding
+                                    characteristics
+                                    of the previous generation, while being endowed with superior human-Robot
+                                    interaction
+                                    capabilities. Featuring an innovative bionic design language, cute
+                                    modeling,multi-modal
+                                    interaction and many other new functions, BellaBot provides users with an
+                                    unprecedented food
+                                    delivery robot experience.</p>
+                            </div>
+                            <br/>
+                            <div className="row">
+                                <div className="col-md-4 offset-md-4 text-center">
+                                    <button type="button" onClick={() => setShow(true)}
+                                            className="btn btn-lg btn-outline-secondary btn-round mt-5">
+                                        <i className="fa fa-play"/> Watch Video
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Modal show={show} onHide={() => setShow(false)} size="lg"
+                       aria-labelledby="example-modal-sizes-title-lg">
+                    <ReactPlayer playing={show} width={"800px"} height={"450px"} controls={true} loop={true}
+                                 url='https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/video/bellabot/business_en.mp4'/>
+                </Modal>
+            </>
+        )
+    } else {
+        return (
+            <>
+                <div className="page-header" data-parallax="true"
+                     style={{backgroundImage: "url('/static/img/bella/banner3.jpg')"}}>
+                    <div className="filter"/>
+                    <div className="container">
+                        <div className="motto text-center">
+                            <img src='/static/img/bella/banner_bellabot.png' width={380} height={83}/>
+                            <h3>Premium Delivery Robot</h3>
+                            <p>The latest delivery robot designed by Pudu, BellaBot inherits the outstanding
+                                characteristics
+                                of the previous generation, while being endowed with superior human-Robot interaction
+                                capabilities. Featuring an innovative bionic design language, cute modeling,multi-modal
+                                interaction and many other new functions, BellaBot provides users with an unprecedented
+                                food
+                                delivery robot experience.</p>
+                            <br/>
+                            <div className="row">
+                                <div className="col-md-4 offset-md-4 text-center">
+                                    <button type="button" onClick={() => setShow(true)}
+                                            className="btn btn-lg btn-outline-secondary btn-round mt-5">
+                                        <i className="fa fa-play"/> Watch Video
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Modal show={show} onHide={() => setShow(false)} size="lg"
+                       aria-labelledby="example-modal-sizes-title-lg">
+                    <ReactPlayer playing={show} width={"800px"} height={"450px"} controls={true} loop={true}
+                                 url='https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/video/bellabot/business_en.mp4'/>
+                </Modal>
+            </>
+        )
+    }
+
+}
 
 const Bella: NextPage = () => {
     return (
         <>
-            <div className="page-header" data-parallax="true" style={{backgroundImage: "url('/static/img/bella/banner3.jpg')"}}>
-                <div className="filter"/>
-                <div className="container">
-                    <div className="motto text-center">
-                        <img src='/static/img/bella/banner_bellabot.png' width={380} height={83}/>
-                        <h3>Premium Delivery Robot</h3>
-                        <p>The latest delivery robot designed by Pudu, BellaBot inherits the outstanding characteristics
-                            of the previous generation, while being endowed with superior human-Robot interaction
-                            capabilities. Featuring an innovative bionic design language, cute modeling,multi-modal
-                            interaction and many other new functions, BellaBot provides users with an unprecedented food
-                            delivery robot experience.</p>
-                        <br/>
-                        {/*<a href="#" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a>
-            <a href="https://exhibitionhall.pudurobotics.com/?lang=en" class="btn btn-outline-neutral btn-round ml-5"
-               target="_blank">3D Preview</a>*/}
-                    </div>
-                </div>
-            </div>
+            <Banner/>
             <div className="main">
                 <div className="section section-da text-center">
                     <div className="container">
@@ -221,7 +299,8 @@ const Bella: NextPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/evolve_tray.png')"}}>
+                                <div className="card" data-background="image"
+                                     style={{backgroundImage: "url('/static/img/bella/evolve_tray.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Infrared Induction Tray</h3>
                                         <p className="card-description">Modular structure for quick disassembly and
@@ -231,7 +310,8 @@ const Bella: NextPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/evolve_battery.png')"}}>
+                                <div className="card" data-background="image"
+                                     style={{backgroundImage: "url('/static/img/bella/evolve_battery.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Power Exchange Technology</h3>
                                         <p className="card-description">Charging and usage scenarios are categorized for
@@ -243,7 +323,8 @@ const Bella: NextPage = () => {
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/rgbd.png')"}}>
+                                <div className="card" data-background="image"
+                                     style={{backgroundImage: "url('/static/img/bella/rgbd.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">RGBD</h3>
                                         <p className="card-description">Auto-level adaptive variable suspension. Damping
@@ -255,7 +336,8 @@ const Bella: NextPage = () => {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <div className="card" data-background="image" style={{backgroundImage: "url('/static/img/bella/suspension.png')"}}>
+                                <div className="card" data-background="image"
+                                     style={{backgroundImage: "url('/static/img/bella/suspension.png')"}}>
                                     <div className="card-body">
                                         <h3 className="card-title">Auto-Level Independent Linkage Suspension for
                                             Stable</h3>
