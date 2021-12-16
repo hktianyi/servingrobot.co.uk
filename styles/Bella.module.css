@@ -2,11 +2,6 @@
     width: auto;
 }
 
-.bgvideo[poster] {
-    height: 100%;
-    width: 100%;
-}
-
 .header-video.state-play .btn, .header-video.state-play .filter:after, .header-video.state-play .video-text {
     opacity: 0
 }
