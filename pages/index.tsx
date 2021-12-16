@@ -52,7 +52,7 @@ const Banner = () => {
                 <Modal show={show} onHide={() => setShow(false)} size="lg"
                        aria-labelledby="example-modal-sizes-title-lg">
                     <ReactPlayer playing={show} width={"800px"} height={"450px"} controls={true} loop={true}
-                                 url='https://pudu-file-cdn.oss-accelerate.aliyuncs.com/website/video/bellabot/business_en.mp4'/>
+                                 url={`${CDN}/static/christmas/christmas.mp4`}/>
                 </Modal>
             </>
         )
